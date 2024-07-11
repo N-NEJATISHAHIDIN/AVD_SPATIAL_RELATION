@@ -11,6 +11,7 @@ This experiment is done for The first scene of AVD with more than 15000 images.
 
 2. **Path to semantics:** In order to do the experiments we need to have the annotations for semantics and classes of objects, here is the semantics for the first home from Auto-Labeling paper:
     - [Instance segmentation annotations](https://drive.google.com/drive/folders/1-xrACG1Gz4_3WLI7GFGuV-orN-WH4HUE?usp=drive_link)
+    - [cleaind_and_ready_to_use](https://drive.google.com/file/d/1nz66pcFr0yI4Dl3HLO51wUTXToU1UeMY/view?usp=sharing)
 
 3. **Path to extra info:** This is a json file which convert classes numbers into class names:
     - [class_is_to_names](https://drive.google.com/file/d/1oG3rp7Q7AAwjJU8q2Q8FZy6sDxHaajDG/view?usp=sharing)
@@ -20,7 +21,7 @@ This experiment is done for The first scene of AVD with more than 15000 images.
     - headers = ["image_name", "is_behind", "is_in_front", "is_above", "is_below", "is_left", "is_right", "target_obj_id", "reference_obj_id"]
     - to visualize the annotations run the following command:
         ```sh
-        python visualize_SRE_labels.py path_to_semantic_annotations  path_to_rgb path_to_data_root path_to_SRE_csv_file 
+        python visualize_SRE_labels.py path_to_cleaind_and_ready_to_use  path_to_rgb path_to_data_root path_to_SRE_csv_file 
         ```
 <!-- - [Available Depth Estimation Models](#available-depth-estimation-models) -->
 
@@ -41,7 +42,7 @@ This project consists of three main data parts:
 
 ## Converting Semantics into Pickle Files
 
-The gt semantic labels are coming in the form of png images. To convert them into pkl annotation dict you can run : 
+The gt semantic labels are coming in the form of png images. To convert them into pkl annotation dict you can run the final results are [uploaded into](https://drive.google.com/file/d/1nz66pcFr0yI4Dl3HLO51wUTXToU1UeMY/view?usp=sharing): 
 ```sh
 python read_label.py path_to_labels path_to_depth path_to_rgb path_to_output 
 ```
