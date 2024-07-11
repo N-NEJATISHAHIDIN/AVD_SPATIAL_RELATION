@@ -23,30 +23,13 @@ This experiment is done for The first scene of AVD with more than 15000 images.
         ```sh
         python visualize_SRE_labels.py path_to_cleaind_and_ready_to_use  path_to_rgb path_to_data_root path_to_SRE_csv_file 
         ```
-<!-- - [Available Depth Estimation Models](#available-depth-estimation-models) -->
-
-<!-- ## Data Paths
-This project consists of three main data parts:
-1. **Path to Main Data 1:** [Define what this data represents]
-    ```plaintext
-    /path/to/main/data1
-    ```
-2. **Path to Main Data 2:** [Define what this data represents]
-    ```plaintext
-    /path/to/main/data2
-    ```
-3. **Path to Main Data 3:** [Define what this data represents]
-    ```plaintext
-    /path/to/main/data3
-    ``` -->
-
-## Converting Semantics into Pickle Files
-
+## Run the Codes
+### Converting Semantics into Pickle Files
 The gt semantic labels are coming in the form of png images. To convert them into pkl annotation dict you can run the final results are [uploaded into](https://drive.google.com/file/d/1nz66pcFr0yI4Dl3HLO51wUTXToU1UeMY/view?usp=sharing): 
 ```sh
 python read_label.py path_to_labels path_to_depth path_to_rgb path_to_output 
 ```
-
+### Re-generate the spatial relations
 Now that you have the required annotations you can run the following command and This program generates the annotations for spatial relation expressions and save the annotations as SRE_annotations.csv file and image with captions to path_to_output.  
 ```sh
 python generat_SRE.py path_to_previous_command_output path_to_depth path_to_rgb path_to_data_root path_to_output 
