@@ -235,7 +235,7 @@ if __name__ == "__main__":
         os.makedirs(args.path_to_output)
     # import pdb; pdb.set_trace()
     
-    CLASSES = load_and_sort_json('/home/negar/secondssd/AVD_spatial_relation/total_categories_count.json')
-    print(CLASSES)
+    # CLASSES = load_and_sort_json('/home/negar/secondssd/AVD_spatial_relation/total_categories_count.json')
+    # print(CLASSES)
     # read_labels(args.path_to_labels, args.path_to_depth, args.path_to_rgb)
     generate_SRE(args.path_to_labels, args.path_to_depth, args.path_to_rgb, args.data_path, args.path_to_output)
